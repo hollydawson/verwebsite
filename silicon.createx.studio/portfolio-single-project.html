@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from silicon.createx.studio/portfolio-single-project.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Sep 2023 16:27:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title> Ver | Project Development</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+        <div class="container px-3">
+          <a href="landing-product.html" class="navbar-brand pe-3">
+            <img src="logo-HQ.png" width="47" alt="Project Ver">
+            Project Ver
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="portfolio-single-project.html" class="nav-link">Project Development</a>
+                </li>
+               <li class="nav-item">
+                  <a href="about-v2.html" class="nav-link">The Team</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blog-grid-no-sidebar.html" class="nav-link">Project Updates</a>
+                </li>
+               
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="https://anu365-my.sharepoint.com/personal/u6310128_anu_edu_au/_layouts/15/onedrive.aspx?FolderCTID=0x0120006F010C3CF724D84EB00AD216B57BB1D8&id=%2Fpersonal%2Fu6310128%5Fanu%5Fedu%5Fau%2FDocuments%2FProject%20Ver" class="btn btn-primary w-100" target="_blank" rel="noopener">
+                <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+                &nbsp;Repository
+              </a>
+            </div>      
+          </div>
+          
+          <a href="https://anu365-my.sharepoint.com/personal/u6310128_anu_edu_au/_layouts/15/onedrive.aspx?FolderCTID=0x0120006F010C3CF724D84EB00AD216B57BB1D8&id=%2Fpersonal%2Fu6310128%5Fanu%5Fedu%5Fau%2FDocuments%2FProject%20Ver" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            &nbsp;Repository
+          </a>
+        </div>
+      </header>
+
+
+      <!-- Breadcrumb -->
+      <nav class="container py-4 mb-lg-2 mt-lg-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="landing-product.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+     
+          <li class="breadcrumb-item active" aria-current="page">Project Development</li>
+        </ol>
+      </nav>
+
+
+      <!-- Page title -->
+      <section class="container pb-4 mb-2 mb-lg-3">
+        <h1>From Concept Generation to a Final V1 Prototype</h1>
+        <p class="text-muted mb-0">As stated in our mission statement, our project aims to develop a prototype device that aids with object detection, sign reading, label reading, and produce a final ergonomic design concept for future development. To reach this final product, the team has developed a number of internal goals that attempt to integrate the iterative nature of human centred engineering with product development. Each developmental stage aims to progress the prototype based of learnings found in the previous review. The stages of development are as follows:  </p>
+      </section>
+
+
+      <!-- Hero image (Parallax) -->
+      <section class="jarallax" data-jarallax data-speed="0.4">
+        <div class="jarallax-img" style="background-image: url(assets/img/portfolio/single/hero.jpg);"></div>
+        <div class="d-none d-xxl-block" style="height: 800px;"></div>
+        <div class="d-none d-lg-block d-xxl-none" style="height: 600px;"></div>
+        <div class="d-none d-md-block d-lg-none" style="height: 450px;"></div>
+        <div class="d-md-none" style="height: 400px;"></div>
+      </section>
+
+
+      <!-- POC -->
+      <section class="container py-5 my-1 my-md-4 my-lg-5">
+        <div class="row">
+          <div class="col-lg-7 mb-4 mb-lg-0">
+            <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+              <h2 class="h1 mb-4">Proof of Concept</h2>
+              <p class="fs-lg mb-0">The proof of concept acts as an initial trial run to ensure that lower-level individual software components are correctly interacting within the overarching systems architecture. In simple terms, the PoC tests how the individual parts of the device talk with one another and identify any potential interruptions or failure in the communication channel. It is important to note that the PoC does not focus on the hardware or ergonomics of the device, but rather tests the feasibility of the idea before further time and resource investment. 
+              <br> <br> The test user will be equipped with a smartphone that is attached to their chest to capture live stream video footage and a pair of Bluetooth headphones which the device will use to communicate with the user. Video footage is streamed from the smartphone device to a laptop carried by a team member directly behind the user to ensure the two devices remain within range. Using WIFI connection the laptop captures necessary frames from the video footage for image processing (client side) before sending the frame to an online server (server side) where a response is generated and sent back to the client to be relayed to the subject.  </p>
+              <br> <br> For the purpose of the PoC, the subject will interact with the device by selecting one of the twelve pre-set prompts. This will require the subject to talk with the team to determine which prompt would be the most useful in any given situation. The 12 pre-set prompts used during testing were as follows: 
+
+              <ol>
+                <li>Describe what can be seen in 10 words. Use only natural language.</li>
+                <li>Describe what can be seen in 20 words. Use only natural language.</li>
+                <li>Describe what can be seen in 30 words. Use only natural language.</li>
+                <li>Describe what can be seen in 40 words. Use only natural language.</li>
+                <li>Describe the signs that can be seen in as few words as possible. Use only natural language.</li>
+                <li>Describe the signs that can be seen in as few words as possible. Use only natural language. If no signs can be seen, reply as such.</li>
+                <li>Describe the signs that can be seen in as few words as possible. Use only natural language. If no signs can be seen, reply with 'There are no signs that can be seen A T M'.</li>
+                <li>Describe the colors that can be seen. Use only natural language. Maximum 40 words.</li>
+                <li>What locations are listed on the sign? Use only natural language.</li>
+                <li>What am I pointing at? Reply in 10 words.</li>
+                <li>What am I holding? Reply in 10 words.</li>
+                <li>Where are the bananas? Reply using clockface coordinates, with 10 o’clock being leftmost and 2 o’clock being rightmost.</li>
+            </ol>
+            </div>
+          </div>
+          <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+            <div class="ps-lg-4 ms-lg-3">
+              <h3 class="h5 d-flex align-items-center">
+                <i class="bx bx-help-circle text-primary fs-4 me-2"></i>
+                Internal Deadline
+              </h3>
+              <p class="pb-4 mb-0 mb-lg-3">Week 1, Semester 2.</p>
+              <h3 class="h5 d-flex align-items-center">
+                <i class="bx bx-bulb text-primary fs-4 me-2"></i>
+                Solution
+              </h3>
+              <p class="mb-0">NEED TO MAKE A CONCLUDING STATEMENT : Sit tellus id proin viverra iaculis pellentesque ornare. Diam augue sit feugiat porttitor leo, fusce vel ac. Placerat vulputate quisque.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+         <!-- MVP -->
+         <section class="container py-5 my-1 my-md-4 my-lg-5">
+          <div class="row">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+                <h2 class="h1 mb-4">Minimum Viable Product (MVP)</h2>
+                <p class="fs-lg mb-0">The purpose of the Minimum Viable Product is to produce a prototype that, on paper, satisfies all project requirements. The MVP incorporates the software developed for PoC into basic hardware components such as a processing board and compatible camera. This allows the team to test system integration with the selected hardware components and gain valuable feedback on a tangible design.  
+                <br> <br> The MVP was scheduled for presentation in Audit 3 as evidence of the team progression but will not be tested on end users. The MVP made several developments from the PoC prototype, these included:  
+                <br> <br>
+                <p class="fs-lg mb-0"><b>Help! Can you help me format this table please?</b></p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+              <div class="ps-lg-4 ms-lg-3">
+                <h3 class="h5 d-flex align-items-center">
+                  <i class="bx bx-help-circle text-primary fs-4 me-2"></i>
+                  Internal Deadline
+                </h3>
+                <p class="pb-4 mb-0 mb-lg-3">Audit 3 - Week 5, Semester 2. </p>
+                <h3 class="h5 d-flex align-items-center">
+                  <i class="bx bx-bulb text-primary fs-4 me-2"></i>
+                  Solution
+                </h3>
+                <p class="mb-0">NEED TO MAKE A CONCLUDING STATEMENT : Sit tellus id proin viverra iaculis pellentesque ornare. Diam augue sit feugiat porttitor leo, fusce vel ac. Placerat vulputate quisque.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+       
+        <section class="container py-5 my-1 my-md-4 my-lg-5">
+          <div class="row">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+                <table boarder="1" cellpadding="10" cellspacing="1">
+                  <tr>
+                    <th>System/Component</th>
+                    <th>PoC</th>
+                    <th>MVP</th>
+                    <tr>
+                      <td>Processing Unit</td>
+                      <td>For the PoC, the camera was streamed to a laptop for image processing and acted as the client, communicating responses from the server to the user. </td>
+                      <td>A local VLLM was loaded onto a Raspberry Pi 5 which allowed all image processing and server communication to occur locally to the device.   </td>
+                    </tr>
+                    <tr>
+                      <td>Image Capture Hardware</td>
+                      <td>The user was equipped with an iPhone in their chest pocket which used an application to live stream camera footage from the iPhone camera straight into the computer code for image processing.</td>
+                      <td>The processing unit was connected to a compatible R-Pi camera module which captured live video stream. Video footage was transferred through a wire connection. </td>
+                    </tr>
+                    <tr>
+                      <td>User Input</td>
+                      <td>The PoC laptop was initialised with 12, preset prompts. Once the user indicated their preferred prompt, the team could action the question through selected the respective key on the laptop. E.g. Selected the “a” key on the laptop keyboard, the device would respond to the prompt “Describe what can be seen in 10 words.”. </td>
+                      <td>The camera casing was equipped with 2 press buttons. When pressed button a would read text present in the captured image back to the user. While button b would provide a general description of the captured scene. </td>
+                    </tr>
+                    <tr>
+                      <td>Device Output </td>
+                      <td>Audio output to users Bluetooth headphones. </td>
+                      <td>No further changes. Audio output to users Bluetooth headphones.</td>
+                    </tr>
+                    <tr>
+                      <td>Physical product  </td>
+                      <td>iPhone camera was secured to user's chest pocket and team member carried a laptop shortly behind user throughout testing for Wi-Fi transmission of video footage.  </td>
+                      <td>Portable device enclosed in two separate 3D printed casings. One casing contained the R-Pi processing unit and power pack. This was connected to the user input module which contained the camera and input buttons.  </td>
+                    </tr>
+                    </tr>
+                  <table>
+            </div>
+          </section>
+       
+
+
+      <!-- Need to make our own image grid here -->
+      <section class="container position-relative pt-1 pt-md-3">
+        <div class="row align-items-start">
+          <div class="rellax col-lg-5 col-sm-6 mb-4 mb-sm-0" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="sm">
+            <img src="assets/img/portfolio/single/01.jpg" class="rounded-3" width="526" alt="Image">
+          </div>
+          <div class="rellax col-lg-7 col-sm-6 d-sm-flex justify-content-end pt-sm-4 pt-lg-5 mt-md-3 mb-4 mb-sm-0" data-rellax-percentage="0.5" data-rellax-speed="-1.25" data-disable-parallax-down="sm">
+            <div><img src="assets/img/portfolio/single/03.jpg" class="rounded-3" width="416" alt="Image"></div>
+          </div>
+          <div class="rellax col-lg-5 col-sm-6 d-sm-flex justify-content-lg-end pt-sm-5 mt-lg-5 mb-4 mb-sm-0" data-rellax-percentage="0.5" data-rellax-speed="-1.25" data-disable-parallax-down="sm">
+            <div><img src="assets/img/portfolio/single/04.jpg" class="rounded-3" width="416" alt="Image"></div>
+          </div>
+          <div class="rellax col-lg-7 col-sm-6 d-sm-flex justify-content-center mt-sm-n5 mb-4 mb-sm-0" data-rellax-percentage="0.5" data-rellax-speed="-0.25" data-disable-parallax-down="sm">
+            <div><img src="assets/img/portfolio/single/05.jpg" class="d-block rounded-3 mt-xl-n5" width="526" alt="Image"></div>
+          </div>
+        </div>
+        <div class="row position-sm-absolute top-50 start-0 translate-middle-sm-y w-100 d-flex mt-md-n5">
+          <div class="rellax col-lg-5 col-sm-6 offset-sm-3 offset-lg-4 mt-sm-n5" data-rellax-percentage="0.5" data-rellax-speed="1.4" data-disable-parallax-down="sm">
+            <img src="assets/img/portfolio/single/02.jpg" class="d-block rounded-3 mt-xl-n5" width="526" alt="Image">
+          </div>
+        </div>
+      </section>
+
+ <!-- Concept 1 -->
+ <section class="container py-5 my-1 my-md-4 my-lg-5">
+  <div class="row">
+    <div class="col-lg-7 mb-4 mb-lg-0">
+      <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+        <h2 class="h1 mb-4">Concept 1</h2>
+        <p class="fs-lg mb-0">Concept 1 is an initial prototype of the selected user design, incorporating device hardware developed in the MVP, with the wearable user component. Prior to concept 1, the team has focused on developing a portable, working prototype to test concept feasibility and system integration.  With MVP confirming the successful integration of hardware and software, the next step is integrating the design into a well disguised, aesthetically pleasing, wearable design.   
+        <br> <br> Taking the stakeholder needs and hardware requirements into consideration, the team determined three potential wearable designs. These are as follows: 
+        <ul>
+          <li>Pocket attachment: all-inclusive power, processing unit and camera unit design that could be worn on the user's apparel. The device could either be pinned onto their jacket or slotted into a breast pocket. </li>
+          <li>Integrated bag design: The integrated bag design aims to reduce the weight and size concerns by storing the processing unit and power supply in a bag segment. The camera and button components will be located on the bag strap across the user's chest and internally wired back into the bag to transmit data.</li>
+          <li>Camera pin: Loosely modelled off the Samsung Insight. This design has been created to demonstrate a desirable product outcome based off the stakeholder requirements. It is designed to be small, discrete, lightweight, intuitive to use and easy to attach to use clothing. </li>
+        </ul>
+        <br> <br> While the camera pin design would be the most optimal approach at meeting our stakeholder needs and project requirements, with limited time and resources the team decided to further develop the integrated bag design. The integrated bag design consists of two main compartments. The first being the camera module, a small rectangular box that sits along the bag strap which includes the device camera and the user input buttons. The second is the processing and power supply unit which is located within the body of the bag. Wires between the camera and button inputs are fed down the strap to transfer information for processing. The image below depicts the preliminary design sketches used to flesh out this concept. 
+
+        <br> <br>Stage 3 developments can be summarised into the following:  
+        <ul>
+          <li>Hardware and casings from MVP were re-designed to be incorporated into a cross-body bag. </li>
+          <li>New, extended wiring allows for camera module to be place at any position along bag strap to best suit user comfort.</li>
+          <li>Development of the “chat” function to offers users the opportunity to ask tailored questions to the device.  
+        </ul>
+        <br><br> Moving on from concept 1, the team at project Ver will take the recommendations and learnings from user testing to further develop the design to be included in the final design.  
+
+      
+      </div>
+    </div>
+    <div class="col-lg-5 col-xl-4 offset-xl-1 border-start-lg">
+      <div class="ps-lg-4 ms-lg-3">
+        <h3 class="h5 d-flex align-items-center">
+          <i class="bx bx-help-circle text-primary fs-4 me-2"></i>
+          External Deadline
+        </h3>
+        <p class="pb-4 mb-0 mb-lg-3">Stakeholder Testing - Teaching Break Week 2, Semester 2. </p>
+        <h3 class="h5 d-flex align-items-center">
+          <i class="bx bx-bulb text-primary fs-4 me-2"></i>
+          Solution
+        </h3>
+        <p class="mb-0">NEED TO MAKE A CONCLUDING STATEMENT : Sit tellus id proin viverra iaculis pellentesque ornare. Diam augue sit feugiat porttitor leo, fusce vel ac. Placerat vulputate quisque.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    
+      
+     <!-- Another Image grid of some kind -->
+     <section class="container position-relative pt-1 pt-md-3">
+      <div class="row align-items-start">
+        <div class="rellax col-lg-5 col-sm-6 mb-4 mb-sm-0" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="sm">
+          <img src="assets/img/portfolio/single/01.jpg" class="rounded-3" width="526" alt="Image">
+        </div>
+        <div class="rellax col-lg-7 col-sm-6 d-sm-flex justify-content-end pt-sm-4 pt-lg-5 mt-md-3 mb-4 mb-sm-0" data-rellax-percentage="0.5" data-rellax-speed="-1.25" data-disable-parallax-down="sm">
+          <div><img src="assets/img/portfolio/single/03.jpg" class="rounded-3" width="416" alt="Image"></div>
+        </div>
+        <div class="rellax col-lg-5 col-sm-6 d-sm-flex justify-content-lg-end pt-sm-5 mt-lg-5 mb-4 mb-sm-0" data-rellax-percentage="0.5" data-rellax-speed="-1.25" data-disable-parallax-down="sm">
+          <div><img src="assets/img/portfolio/single/04.jpg" class="rounded-3" width="416" alt="Image"></div>
+        </div>
+        <div class="rellax col-lg-7 col-sm-6 d-sm-flex justify-content-center mt-sm-n5 mb-4 mb-sm-0" data-rellax-percentage="0.5" data-rellax-speed="-0.25" data-disable-parallax-down="sm">
+          <div><img src="assets/img/portfolio/single/05.jpg" class="d-block rounded-3 mt-xl-n5" width="526" alt="Image"></div>
+        </div>
+      </div>
+      <div class="row position-sm-absolute top-50 start-0 translate-middle-sm-y w-100 d-flex mt-md-n5">
+        <div class="rellax col-lg-5 col-sm-6 offset-sm-3 offset-lg-4 mt-sm-n5" data-rellax-percentage="0.5" data-rellax-speed="1.4" data-disable-parallax-down="sm">
+          <img src="assets/img/portfolio/single/02.jpg" class="d-block rounded-3 mt-xl-n5" width="526" alt="Image">
+        </div>
+      </div>
+    </section>
+
+      
+
+      <!-- NEED TO ADD A BREAK BETWEEN IMAGE GRID AND CONTACT POINT - Contact CTA -->
+      <section class="container pb-lg-2 mt-md-n2">
+        <div class="card border-0 bg-gradient-primary">
+          <div class="card-body p-md-5 p-4 bg-size-cover" style="background-image: url(assets/img/landing/digital-agency/contact-bg.png);">
+            <div class="py-md-5 py-4 text-center">
+              <h3 class="h4 fw-normal text-light opacity-75"> Have ideas or suggestions? Let’s chat!</h3>
+              <a href="mailto:email@example.com" class="display-6 text-light">projectver.anu@gmail.com</a>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+<footer class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
+  <div class="container pt-lg-4">
+    <div class="row gy-5 pb-5">
+      <div class="col-lg-4">
+        <div style="max-width: 26rem;">
+          <h3 class="mb-4">We want your input!</h3>
+          <p class="mb-4 pb-2">If you want to share your ideas or thoughts we encourage you to send us an email on the address linked below</p>
+              <li>
+                <a href="mailto:projectver.anu@gmail.com" class="nav-link align-items-start fw-normal px-0 py-1">
+                  <i class="bx bx-envelope fs-5 text-primary me-2"></i>
+                  projectver.anu@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+      <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+        <div id="footer-links" class="row">
+          <div class="col-lg-4">
+            <h6 class="mb-2">
+              <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+            </h6>
+            <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+              <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                
+              </ul>
+              
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-3">
+            <h6 class="mb-2">
+              <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
+            </h6>
+            <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+              <ul class="nav flex-column mb-2 mb-lg-0">
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+            <h6 class="mb-2">Contact Us</h6>
+            <a href="mailto:projectver.anu@gmail.com" class="fw-medium">projectver.anu@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+      <span class="text-light opacity-50">&copy; All rights reserved. Made by </span>
+      <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a>
+    </p>
+  </div>
+</footer>
+
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/rellax/rellax.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from silicon.createx.studio/portfolio-single-project.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Sep 2023 16:27:50 GMT -->
+</html>

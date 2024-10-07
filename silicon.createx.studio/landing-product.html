@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from silicon.createx.studio/landing-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Sep 2023 16:26:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title> Project Ver </title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content= "Project Ver | Open-source assistive technology to help individuals with low-vision navigate the world">
+    <meta name="keywords" content=" EDIT !! bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="EDIT !!! Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#0d6efd">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg navbar-dark position-absolute navbar-sticky">
+        <div class="container px-3">
+          <a href="landing-product.html" class="navbar-brand pe-3">
+            <img src="logo-HQ.png" width="47" alt="Project Ver">
+            Project ver
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end bg-dark">
+            <div class="offcanvas-header border-bottom border-light">
+              <h5 class="offcanvas-title text-white">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="portfolio-single-project.html" class="nav-link">Project Development</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about-v2.html" class="nav-link">The Team</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blog-grid-no-sidebar.html" class="nav-link">Project Updates</a>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top border-light">
+              <a href="https://anu365-my.sharepoint.com/personal/u6310128_anu_edu_au/_layouts/15/onedrive.aspx?FolderCTID=0x0120006F010C3CF724D84EB00AD216B57BB1D8&id=%2Fpersonal%2Fu6310128%5Fanu%5Fedu%5Fau%2FDocuments%2FProject%20Ver" class="btn btn-primary w-100" target="_blank" rel="noopener">
+                &nbsp;Repository
+              </a>
+            </div>      
+          </div>
+         
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="https://anu365-my.sharepoint.com/personal/u6310128_anu_edu_au/_layouts/15/onedrive.aspx?FolderCTID=0x0120006F010C3CF724D84EB00AD216B57BB1D8&id=%2Fpersonal%2Fu6310128%5Fanu%5Fedu%5Fau%2FDocuments%2FProject%20Ver" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            &nbsp;Repository
+          </a>
+        </div>
+      </header>
+
+
+      <!-- Hero section -->
+      <section class="dark-mode min-vh-100 bg-dark bg-size-cover bg-repeat-0 bg-position-center position-relative overflow-hidden py-5 mb-5" style="background-image: url(assets/img/landing/product/hero/bg.jpg);">
+        <div class="container pt-lg-3">
+          <div class="row flex-lg-nowrap">
+            <div class="col-lg-7 col-xl-6 col-xxl-5 text-center text-lg-start pt-4 pt-md-5 mt-xxl-4">
+              <p class="lead pt-5 mt-sm-2 mt-lg-4 mt-xl-5">Innovative Tech Solutions for the Vision Impaired Community</p>
+              <h1 class="display-3 pb-md-2 mb-5">Project Ver</h1>
+              <div class="mt-n4 ms-lg-n4 ms-n3 pb-sm-3 pb-md-4">
+                <a href="https://www.youtube.com/watch?v=NJ3Z1hSOoMc" class="btn btn-lg btn-primary mt-lg-4 mt-3 ms-lg-4 ms-3" data-bs-toggle="video">
+                  Watch video
+                  <i class="bx bx-play ms-1 lead"></i>
+                </a>
+                <a href="#" class="btn btn-lg btn-light mt-lg-4 mt-3 ms-lg-4 ms-3">
+                  Learn more
+                  <i class="bx bx-right-arrow-alt ms-1 lead"></i>
+                </a>
+              </div>
+              <div class="swiper-slider mx-auto mt-5 pt-xl-5 pt-lg-2 pt-xl-4" style="max-width: 33rem;">
+                <div class="swiper" data-swiper-options='{
+                  "slidesPerView": 1,
+                  "effect": "coverflow",
+                  "centeredSlides": true,
+                  "loop": true,
+                  "speed": 650,
+                  "coverflowEffect": {
+                    "rotate": 0,
+                    "stretch": 0,
+                    "depth": 560,
+                    "modifier": 1,
+                    "slideShadows": true
+                  },
+                  "autoplay": {
+                    "delay": 6000,
+                    "disableOnInteraction": false
+                  },
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "fraction"
+                  },
+                  "navigation": {
+                    "prevEl": ".btn-prev",
+                    "nextEl": ".btn-next"
+                  }
+                }'>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/img/landing/product/hero/slider/01.jpg" width="434" alt="Slider image" class="d-block mx-auto rounded-3">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/landing/product/hero/slider/02.jpg" width="434" alt="Slider image" class="d-block mx-auto rounded-3">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/landing/product/hero/slider/03.jpg" width="434" alt="Slider image" class="d-block mx-auto rounded-3">
+                    </div>
+                  </div>
+
+                  <!-- Prev/Next buttons + count -->
+                  <div class="d-flex justify-content-center align-items-center pb-3 pt-4 mt-3">
+                    <button type="button" class="btn btn-prev btn-icon position-relative top-0 mt-0 ms-0 me-2" style="transform: none;">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <div class="swiper-pagination text-light opacity-70 fs-sm fw-medium position-relative top-0 w-auto" style="min-width: 70px;"></div>
+                    <button type="button" class="btn btn-next btn-icon position-relative top-0 mt-0 ms-2 me-0" style="transform: none;">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured image -->
+            <div class="d-none d-lg-block pt-5 mt-lg-4 mt-xl-5 ms-lg-n5 mx-xl-0">
+              <img src="assets/img/landing/product/hero/image.png" class="d-block pt-xxl-4 mt-5" width="1058" alt="Hero image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- Features -->
+<section class="container pt-1 py-sm-2 py-md-4 py-lg-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4 py-5 mb-2 mb-sm-3">
+
+    <!-- NEED TO CHANGE ICONS - Item -->
+    <div class="col pt-2 pt-md-0">
+      <div class="text-center px-xl-4">
+        <img src="assets/img/landing/startup/icons/riding-scooter.svg" class="d-inline-block mb-4" width="70" alt="Icon">
+        <h3 class="h4 mb-2">Modern AI Technology</h3>
+        <p class="fs-lg mb-0">Leveraging LLM technology, the device absorbs environmental information to provide context specific responses .</p>
+      </div>
+    </div>
+
+    <!-- Item -->
+    <div class="col pt-2 pt-md-0">
+      <div class="text-center px-xl-4">
+        <img src="assets/img/landing/startup/icons/diamond.svg" class="d-inline-block mb-4" width="70" alt="Icon">
+        <h3 class="h4 mb-2">Functional &amp; Disguised</h3>
+        <p class="fs-lg mb-0">A high speed technology integrated into a lightweight cross body bag so that you have both hands free for more important things!</p>
+      </div>
+    </div>
+
+    <!-- Item -->
+    <div class="col pt-2 pt-md-0">
+      <div class="text-center px-xl-4">
+        <img src="assets/img/landing/startup/icons/planet.svg" class="d-inline-block mb-4" width="70" alt="Icon">
+        <h3 class="h4 mb-2">Bluetooth Connectivity</h3>
+        <p class="fs-lg mb-0">Pair Ver with your device to speak freely, ask questions or receive instant feedback about your surroundings into your headphones. </p><br><br>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+     
+      <section class="container pb-md-3 pb-lg-4 pb-xl-0 pt-sm-2 pt-md-3 pt-lg-5 mt-2 mt-md-3">
+        <h2 class="display-5 text-center pt-5 pb-3 pb-md-4 pb-lg-5 mb-xl-4">Open-source assistive technology to help individuals with low-vision navigate the world</h2><br>
+
+        <!-- Step -->
+        <div class="row align-items-center pb-5 mb-2 mb-md-3 mb-lg-4 mb-xl-5">
+          <div class="rellax col-md-6 pb-2 pb-md-0 mb-4 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
+            <div class="position-relative rounded-3 overflow-hidden">
+              <div class="bg-gradient-primary position-absolute top-0 start-0 w-100 h-100"></div>
+              <img src="assets/img/landing/startup/steps/01.svg" class="d-block position-relative zindex-2 mx-auto" width="636" alt="Image">
+            </div>
+          </div>
+          <div class="rellax col-md-6 col-lg-5 offset-lg-1" data-rellax-percentage="0.5" data-rellax-speed="-0.7" data-disable-parallax-down="md">
+            <div class="ps-md-4 ps-lg-0">
+              
+              <h3 class="h1 mb-lg-4">Your Grocery Store Helping Hand</h3>
+              <p class="fs-xl mb-0"> Enhancing your shopping experience with advanced object detection and sign/label recognition technology. <b>INSERT HERE: ICONS UNDERNEATH!</b></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step -->
+        <div class="row align-items-center pb-5 mb-2 mb-md-3 mb-lg-4 mb-xl-5">
+          <div class="rellax col-md-6 pb-2 pb-md-0 mb-4 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
+            <div class="position-relative rounded-3 overflow-hidden">
+              <div class="bg-gradient-primary position-absolute top-0 start-0 w-100 h-100"></div>
+              <img src="assets/img/landing/startup/steps/02.svg" class="d-block position-relative zindex-2 mx-auto" width="636" alt="Image">
+            </div>
+          </div>
+          <div class="rellax col-md-6 col-lg-5 offset-lg-1" data-rellax-percentage="0.5" data-rellax-speed="-0.7" data-disable-parallax-down="md">
+            <div class="ps-md-4 ps-lg-0">
+              
+              <h3 class="h1 mb-lg-4">Our Mission</h3>
+              <p class="fs-xl mb-0">Develop a prototype device that aids with object detection, sign reading, label reading, and produce a final ergonomic design concept for future development." </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step -->
+        <div class="row align-items-center pb-5 mb-2 mb-md-3 mb-lg-4 mb-xl-5">
+          <div class="rellax col-md-6 pb-2 pb-md-0 mb-4 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
+            <div class="position-relative rounded-3 overflow-hidden">
+              <div class="bg-gradient-primary position-absolute top-0 start-0 w-100 h-100"></div>
+              <img src="assets/img/landing/startup/steps/03.svg" class="d-block position-relative zindex-2 mx-auto" width="636" alt="Image">
+            </div>
+          </div>
+          <div class="rellax col-md-6 col-lg-5 offset-lg-1" data-rellax-percentage="0.5" data-rellax-speed="-0.7" data-disable-parallax-down="md">
+            <div class="ps-md-4 ps-lg-0">
+              <div class="text-primary fs-xl fw-bold pb-1 mb-2">Dual Mode Operation</div>
+              <h3 class="h1 mb-lg-4">1. Discover Mode</h3>
+              <p class="fs-xl mb-0">Feeling curious? The describe button provides a brief, discrete description of your immediate surroundings.</p>
+             <br>
+              <h3 class="h1 mb-lg-4">2. Chat Mode</h3>
+              <p class="fs-xl mb-0">Got more questions about your surroundings? Need more specific information? The chat mode has you covered! Our advanced AI technologoy means that you can talk freely with the device to tailor your questions to better reflect your needs.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step -->
+        <div class="row align-items-center pb-5 mb-2 mb-md-3 mb-lg-4 mb-xl-5">
+          <div class="rellax col-md-6 pb-2 pb-md-0 mb-4 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
+            <div class="position-relative rounded-3 overflow-hidden">
+              <div class="bg-gradient-primary position-absolute top-0 start-0 w-100 h-100"></div>
+              <img src="assets/img/landing/startup/steps/04.svg" class="d-block position-relative zindex-2 mx-auto" width="636" alt="Image">
+            </div>
+          </div>
+          <div class="rellax col-md-6 col-lg-5 offset-lg-1" data-rellax-percentage="0.5" data-rellax-speed="-0.7" data-disable-parallax-down="md">
+            <div class="ps-md-4 ps-lg-0">
+              <div class="text-primary fs-xl fw-bold pb-1 mb-2">blah blah</div>
+              <h3 class="h1 mb-lg-4">User Centered Design</h3>
+              <p class="fs-xl mb-0">You know what you need better than anyone else. <br> That's why we have been collaborating with members of the Australian vision impaired community to really get to know what the market is missing.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- Benefits -->
+       <section class="container mb-5 pt-md-2 pt-lg-4 pt-xl-5">
+        <h2 class="h1 my-4 pt-2 text-center">Do we want to make something similar ?? Could delete this section</h2>
+        <div class="row pb-4">
+          <div class="col-md-3 col-6 order-md-1 order-2">
+            <div class="d-flex flex-column justify-content-between h-100 text-center">
+
+              <!-- Item -->
+              <div class="mt-md-5 mt-4">
+                <img src="assets/img/landing/product/benefits/battery.svg" alt="Icon" class="d-inline-block mb-4">
+                <h3 class="h4 mb-0 lh-1">
+                  <span class="d-block mb-2 fs-base fw-normal">Rechargeable</span>
+                  need time 
+                </h3>
+              </div>
+
+              <!-- Item -->
+              <div class="mt-md-5 mt-4">
+                <img src="assets/img/landing/product/benefits/drone.svg" alt="Icon" class="d-inline-block mb-4">
+                <h3 class="h4 mb-0 lh-1">
+                  <span class="d-block mb-2 fs-base fw-normal">Obstacle Recognition</span>
+                  blah blah
+                </h3>
+              </div>
+
+              <!-- Item -->
+              <div class="mt-md-5 mt-4">
+                <img src="assets/img/landing/product/benefits/monitor.svg" alt="Icon" class="d-inline-block mb-4">
+                <h3 class="h4 mb-0 lh-1">
+                  <span class="d-block mb-2 fs-base fw-normal">Sign and Label Reading</span>
+                  blah blah
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 order-md-2 order-1">
+            <div class="d-flex flex-column justify-content-between h-100">
+
+              <!-- Image -->
+              <div class="mx-md-n5 mb-md-n5">
+                <img src="assets/img/landing/product/benefits/image.png" alt="Image">
+              </div>
+
+              <!-- Items row -->
+              <div class="row row-cols-2 mt-md-5 mt-4 text-center">
+
+                <!-- Item -->
+                <div class="col">
+                  <img src="assets/img/landing/product/benefits/thermometer.svg" alt="Icon" class="d-inline-block mb-4">
+                  <h3 class="h4 mb-0 lh-1">
+                    <span class="d-block mb-2 fs-base fw-normal">Light weight & Functional</span>
+                    Disguised design 
+                  </h3>
+                </div>
+
+                <!-- Item -->
+                <div class="col">
+                  <img src="assets/img/landing/product/benefits/led-light.svg" alt="Icon" class="d-inline-block mb-4">
+                  <h3 class="h4 mb-0 lh-1">
+                    <span class="d-block mb-2 fs-base fw-normal">Cross Body Bag</span>
+                    Aesthetically integrated
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 order-md-3 order-3">
+            <div class="d-flex flex-column justify-content-between h-100 text-center">
+
+              <!-- Item -->
+              <div class="mt-md-5 mt-4">
+                <img src="assets/img/landing/product/benefits/zoom-in.svg" alt="Icon" class="d-inline-block mb-4">
+                <h3 class="h4 mb-0 lh-1">
+                  <span class="d-block mb-2 fs-base fw-normal">Optical camera</span>
+                  8 Megapixels
+                </h3>
+              </div>
+
+              <!-- Item -->
+              <div class="mt-md-5 mt-4">
+                <img src="assets/img/landing/product/benefits/computer-microprocessor.svg" alt="Icon" class="d-inline-block mb-4">
+                <h3 class="h4 mb-0 lh-1">
+                  <span class="d-block mb-2 fs-base fw-normal">GPU Processing</span>
+                  Intern VL2
+                </h3>
+              </div>
+
+              <!-- Item -->
+              <div class="mt-md-5 mt-4">
+                <img src="assets/img/landing/product/benefits/audio.svg" alt="Icon" class="d-inline-block mb-4">
+                <h3 class="h4 mb-0 lh-1">
+                  <span class="d-block mb-2 fs-base fw-normal">Audio Feedback</span>
+                  Bluetooth Connection
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- MAYBE WE DELETE THIS... CTA -->
+      <section class="overflow-hidden pt-lg-5 pt-3 pt-sm-4">
+        <div class="container position-relative">
+          <div class="w-100 position-absolute top-0 start-50 translate-middle-x text-center px-3" style="max-width: 40rem;">
+            <h3 class="display-5 mb-4 pb-2">
+              Don't miss anything with <span class="text-primary">ProDrone 2.0</span>
+            </h3>
+            <a href="#" class="btn btn-lg btn-primary">Buy now</a>
+          </div>
+        </div>
+        <div class="pt-5 pt-sm-4 pt-md-0 mt-lg-n5 me-n4 me-sm-n5">
+          <img src="assets/img/landing/product/cta.png" width="1296" alt="Image" class="d-block mx-auto">
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
+      <div class="container pt-lg-4">
+        <div class="row gy-5 pb-5">
+          <div class="col-lg-4">
+            <div style="max-width: 26rem;">
+              <h3 class="mb-4">We want your input!</h3>
+              <p class="mb-4 pb-2">If you want to share your ideas or thoughts we encourage you to send us an email on the address linked below</p>
+                  <li>
+                    <a href="mailto:email@example.com" class="nav-link align-items-start fw-normal px-0 py-1">
+                      <i class="bx bx-envelope fs-5 text-primary me-2"></i>
+                      projectver.anu@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-4">
+        <div class="d-flex flex-sm-row flex-column align-items-center justify-content-between text-center text-md-start pt-4 border-top border-light">
+          <p class="nav d-block fs-sm mb-sm-0 mb-4">
+            <span class="text-light opacity-50">&copy; All rights reserved. Made by </span>
+            <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a>
+          </p>
+          
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from silicon.createx.studio/landing-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Sep 2023 16:26:15 GMT -->
+</html>
